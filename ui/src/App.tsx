@@ -15,8 +15,8 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [port, setPort] = useState<number>(7545);
-  const [rpc, setRpc] = useState<string>('localhost');
+  const [port, setPort] = useState<number>(9545);
+  const [rpc, setRpc] = useState<string>('0.0.0.0');
 
   return (
     <BrowserRouter basename="/debug">

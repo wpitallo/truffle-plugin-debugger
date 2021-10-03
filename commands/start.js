@@ -45,7 +45,7 @@ const debug = async (config) => {
     });
 
     app.listen(port, () => {
-      console.log(`Started and listening at http://localhost:${port}`)
+      console.log(`Started and listening at http://0.0.0.0:${port}`)
     });
 
   } catch (err) {

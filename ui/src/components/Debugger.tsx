@@ -131,7 +131,7 @@ const Debugger = ({}) => {
 
   let { txHash, port } = useParams();
 
-  const providerUrl = `http://127.0.0.1:${port}`;
+  const providerUrl = `http://0.0.0.0:${port}`;
   const transaction: any = {
     hash: txHash
   };
@@ -146,7 +146,7 @@ const Debugger = ({}) => {
     setReturnValue(null);
     setBreakpoints([]);
 
-    const res:any = await axios.get("http://127.0.0.1:54321/artifacts")
+    const res:any = await axios.get("http://0.0.0.0:54321/artifacts")
     const artifacts: any = res.data;
 
     const input: {

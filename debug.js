@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const debug = require("./commands/start");
 
 module.exports = (config) => {
